@@ -5,8 +5,6 @@
 # http://www.sequelpro.com/
 # https://github.com/sequelpro/sequelpro
 #
-# Host: feltt-1.cr2pen2efxjm.us-east-1.rds.amazonaws.com (MySQL 5.7.22-log)
-# Database: feltt
 # Generation Time: 2019-09-07 19:08:47 +0000
 # ************************************************************
 
@@ -104,10 +102,6 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-
-INSERT INTO `users` (`id`, `email`, `uname`, `created_at`, `updated_at`, `avatar_url`, `blurb`)
-VALUES
-	(17,'dan.ruswick@gmail.com','anwntvr86yk09uh4bu','2019-09-07 17:51:05','2019-09-07 17:51:05',NULL,NULL);
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
