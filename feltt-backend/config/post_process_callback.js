@@ -2,6 +2,7 @@ var redis = require("redis"),
     client = redis.createClient();
 module.exports = function (job, done) {
     const job_str = JSON.stringify(job.data)
+    console.log('in fanout', job.data)
     const feed_ids = []
     for (let i of feed_ids) {
         client.rpush(i, job_str);

@@ -39,7 +39,7 @@ router.post('/get_jwt', async (req, res) => {
         username: user.uname
     };
     console.log(token_data);
-    const jwt_token = jwt.sign(google_account_info, constants.jwt_secret, {
+    const jwt_token = jwt.sign(token_data, constants.jwt_secret, {
         expiresIn: 60 * 120
     });
     res.setHeader('x-auth-token', jwt_token);
